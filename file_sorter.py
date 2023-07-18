@@ -11,8 +11,8 @@ for filename in os.listdir():
         # If the filename is of type folder or if it have no extension, then we will pass
         pass
     else:
-        extension = filename.split('.')[-1]
-        folder_name = extension.capitalize()
+        extension: str = filename.split('.')[-1]
+        folder_name: str = extension.capitalize()
 
         if extension not in extensions:
             extensions.append(extension)
